@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gold/Silver Loan Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Gold/Silver Loan Application</h1>
+  <form id="loanForm">
+    <!-- Customer Details -->
+    <fieldset>
+      <legend>Customer Details</legend>
+      <label for="knNumber">KN Number:</label>
+      <input type="text" id="knNumber" name="knNumber" required>
+      <!-- Other customer details inputs -->
+    </fieldset>
+    <!-- Asset Details -->
+    <fieldset>
+      <legend>Asset Details</legend>
+      <label for="goldType">Gold Type:</label>
+      <select id="goldType" name="goldType" required>
+        <option value="8">8 Carat</option>
+        <option value="16">16 Carat</option>
+        <option value="24">24 Carat</option>
+      </select>
+      <label for="weight">Weight (in grams):</label>
+      <input type="number" id="weight" name="weight" required>
+      <label for="placeBought">Place bought From:</label>
+      <input type="text" id="placeBought" name="placeBought" required>
+      <label for="jewelersName">Jeweler's Name:</label>
+      <input type="text" id="jewelersName" name="jewelersName" required>
+      <label for="jewelersAddress">Jeweler's Address:</label>
+      <textarea id="jewelersAddress" name="jewelersAddress" required></textarea>
+      <label for="photo">Photo of the Gold Ornament:</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required>
+    </fieldset>
+    <!-- Declaration -->
+    <fieldset>
+      <legend>Declaration</legend>
+      <textarea id="declaration" name="declaration" required></textarea>
+    </fieldset>
+    <!-- Bank Details -->
+    <fieldset>
+      <legend>Bank Details</legend>
+      <label for="accountHolderName">Account Holder Name:</label>
+      <input type="text" id="accountHolderName" name="accountHolderName" required>
+      <label for="jointAccount">Joint Account:</label>
+      <input type="checkbox" id="jointAccount" name="jointAccount">
+      <label for="accountType">Account Type:</label>
+      <select id="accountType" name="accountType" required>
+        <option value="Savings">Savings</option>
+        <option value="Current">Current</option>
+      </select>
+      <label for="accountNumber">Account Number:</label>
+      <input type="number" id="accountNumber" name="accountNumber" required>
+      <label for="ifscCode">IFSC Code:</label>
+      <input type="text" id="ifscCode" name="ifscCode" required>
+      <label for="bankName">Bank Name:</label>
+      <input type="text" id="bankName" name="bankName" required>
+      <label for="branchName">Branch Name:</label>
+      <input type="text" id="branchName" name="branchName" required>
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
